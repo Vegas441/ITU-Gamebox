@@ -1,21 +1,19 @@
 import React from 'react'
-import Review from './Review'
+import ReviewCard from './ReviewCard'
 
 /**
  * Review page - will serve as home page
  * @param {} param0 
  * @returns 
  */
-export default function ReviewList({ reviewList }) {
+export default function ReviewList({ reviews }) {
   return (
-    reviewList.map(review => {
-      return (
-        <>
-        
-        <Review review={review}/>
-
-        </>
-      )
-    })
+    <div className='container' style={{ display: 'flex', justifyContent: 'center'}}>
+      {reviews.map(review => {
+        return (
+          <ReviewCard review={review}/>
+        )
+      })}
+    </div>
   )
 }

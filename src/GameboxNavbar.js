@@ -5,8 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button'
 import { FaSearch } from 'react-icons/fa'
 
-export default function GameboxNavbar() {
-  const [userProfile, setUserProfile] = useState({name: 'User1234', avatar: '/profile_pics/person_0.jpg'}) // example profile
+export default function GameboxNavbar({ userProfile }) {
   return (
     <>
       <Navbar fixedTop style={{backgroundColor: "#14181c", variant: "light"}}>
@@ -25,15 +24,16 @@ export default function GameboxNavbar() {
           <Nav> 
             <img
               alt=""
-              src={userProfile.avatar}
-              width="30"
-              height="30"
-              //border-radius= "50%"
+              src={userProfile.image}
+              width="40"
+              height="40"
+              style={{borderRadius: '50%'}}
             />
+            <a><Nav.Link style={{color: '#99aabb', size: '24px', fontWeight: 'bold'}}>{userProfile.name}</Nav.Link></a>
           
-            <Nav.Link style={{color: '#99aabb'}}> Games </Nav.Link>
-            <Nav.Link style={{color: '#99aabb'}}> Lists </Nav.Link>
-            <Nav.Link><FaSearch style={{width: 30, color: '#99aabb'}}/></Nav.Link>
+            <a><Nav.Link style={{color: '#99aabb'}}> Games </Nav.Link></a>
+            <a><Nav.Link style={{color: '#99aabb'}}> Lists </Nav.Link></a>
+            <a><Nav.Link><FaSearch style={{width: 30, color: '#99aabb'}}/></Nav.Link></a>
             <Button size='sm'> <b>+ LOG</b>  </Button>
           </Nav>
         </Container>

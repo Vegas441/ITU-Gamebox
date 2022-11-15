@@ -1,0 +1,101 @@
+{
+    "games": [
+        {
+            "id": 1,
+            "name": "Red Dead Redemption 2",
+            "image": "/posters/rdr2.jpg"
+        },
+        {
+            "id": 2, 
+            "name": "Elden Ring", 
+            "image": "/posters/elden_ring.jpg"
+        },
+        {
+            "id": 3, 
+            "name": "Mass effect 3", 
+            "image": "/posters/me3.jpg"
+        },
+        {
+            "id": 4, 
+            "name": "Death Stranding", 
+            "image": "/posters/death_stranding.jpg"
+        },
+        {
+            "id": 5, 
+            "name": "God of War", 
+            "image": "/posters/gow.jpg"
+        }
+    ],
+    "userProfiles": [
+        {
+            "id": 1,
+            "name": "User1234", 
+            "bio": "will add later" , 
+            "image": "/profile_pics/person_0.jpg"
+        }, 
+        {
+            "id": 2,
+            "name":"ShadowNinja", 
+            "bio": "will add later", 
+            "image": "/profile_pics/person_1.jpg"
+        },
+        {   "id": 3,
+            "name": "Anomaly", 
+            "bio": "will add later", 
+            "image": "profile_pics/person_2.png"
+        },
+        {
+            "id": 4,
+            "name": "Boris", 
+            "bio": "will add later", 
+            "image": "profile_pics/person_3.jpg"
+        },
+        {
+            "id": 5,
+            "name": "idk1234", 
+            "bio": "will add later", 
+            "image": "profile_pics/person_4.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Shaman", 
+            "bio": "will add later", 
+            "image": "profile_pics/person_5.avif"
+        },
+        {
+            "id": 7,
+            "name": "iMolestToasters", 
+            "bio": "will add later", 
+            "image": "profile_pics/person_6.jpg"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1, 
+            "name": "Review_0", 
+            "userID": 2, 
+            "gameID": 1, 
+            "rating": 5, 
+            "content": "Amazing, finally some good f*cking game.", 
+            "date": "26-10-2022"
+        },
+        {
+            "id": 2,
+            "name": "Review_1", 
+            "userID": 3, 
+            "gameID": 2, 
+            "rating": 4, 
+            "content": "Pretty good", 
+            "date": "11-11-2022"
+        },
+        {
+            "id": 3, 
+            "name": "Review_3", 
+            "userID": 4, 
+            "gameID": 4, 
+            "rating": 2, 
+            "content": "Walking simulator", 
+            "date": "5-11-2022"
+        }
+    ]
+}

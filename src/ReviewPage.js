@@ -1,23 +1,29 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
+import ReactStars from "react-stars";
+import GameCard from './GameCard';
 
-// TODO: fetch review object from data  
 export default function ReviewPage() {
-    let { reviewID } = useParams()
 
     const [review, setReview] = useState(null);
     const [game, setGame] = useState(null); 
     const [user, setUser] = useState(null);
 
-    // Fetch data by id | TODO: fix 
+    // Pulls userID and gameID parameters from link 
+    const location = useLocation()
+    const { gameID, userID } = location.state
+    // Pulls reviewId from url
+    let { reviewID } = useParams()
+
+    // Fetch data by id 
     useEffect(() => {
         fetch(`http://localhost:8000/reviews/${reviewID}`).then(res => {
             return res.json();
         }).then(data => {setReview(data)})
-        if(review) fetch(`http://localhost:8000/games/${review.gameID}`).then(res => {
+        if(gameID) fetch(`http://localhost:8000/games/${gameID}`).then(res => {
             return res.json();
         }).then(data => {setGame(data)});
-        if(review) fetch(`http://localhost:8000/userProfiles/${review.userID}`).then(res => {
+        if(userID) fetch(`http://localhost:8000/userProfiles/${userID}`).then(res => {
             return res.json();
         }).then(data => {setUser(data)});
     }, []);
@@ -26,21 +32,26 @@ export default function ReviewPage() {
         <>
         {review &&
             <div className="container">
-                {game && 
+                {/*game && 
                 <img
                     src={game.image}
-                    style={{height: '225px'}}
-                />}
-                {user && 
-                <img
+                    style={{height: '310px', width: '207px',marginTop: '110px', borderRadius: '5%'}}
+                />*/}
+                {game && <GameCard game={game}/>}
+                {user &&    <img
                     src= {user.image}
                     alt=''
-                    width="25"
-                    height="25" 
-                    style={{borderRadius: '50%', marginRight: '5px'}}
+                    width="50"
+                    height="50" 
+                    style={{borderRadius: '50%', marginTop: '-150px', marginLeft: '150px'}}
                 />
                 }
-                {user && <p>Review by <b>{user.name}</b></p>}
+                <p style={{ color: 'white', fontSize: '22px',display: 'inline', position: 'relative', bottom: '70px', left: '15px' }}>Review by {user &&  <b>{user.name}</b>}</p>
+                <hr style={{color: '#14181c', width: '500px', marginLeft: '350px', marginTop: '-250px'}}/>
+                {game && <h1 style={{color: 'white', marginLeft: '350px', fontWeight: 'bold'}}>{game.name}
+                <p style={{ display: 'inline', fontSize: '20px', fontWeight: 'normal', marginLeft:'20px'}}>{game.releaseDate}</p>
+                <ReactStars size={32} count={review.rating} color1={'yellow'} edit={ false } style={{ display: 'inline'}}/></h1>}
+                {game && <p style={{color: 'white', marginLeft: '350px', maxWidth: '700px'}}>{review.content}</p>}
             </div>
         }
         </>

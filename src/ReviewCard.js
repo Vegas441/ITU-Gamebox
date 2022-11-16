@@ -21,7 +21,7 @@ export default function ReviewCard({ review }) {
 
   return (
     <>
-      <Link to={`/reviewpage/${review.id}`} style={{ textDecoration: 'none' }}>
+      <Link to={`/reviewpage/${review.id}`} state={{ gameID: review.gameID, userID: review.userID }} style={{ textDecoration: 'none' }}>
       <Card style={{ width: '10rem', margin: '15px', backgroundColor: "#445566" }}>
         { game && <Card.Img variant="top" src={game.image} style={{height: '225px'}} />}        
         <Card.Body style={{padding: '8px'}}>

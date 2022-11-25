@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import ReactStars from "react-stars";
 import GameCard from './GameCard';
+import RateCard from "./RateCard";
 
 export default function ReviewPage() {
 
@@ -32,11 +33,6 @@ export default function ReviewPage() {
         <>
         {review &&
             <div className="container">
-                {/*game && 
-                <img
-                    src={game.image}
-                    style={{height: '310px', width: '207px',marginTop: '110px', borderRadius: '5%'}}
-                />*/}
                 {game && <GameCard game={game}/>}
                 {user &&    <img
                     src= {user.image}
@@ -52,6 +48,11 @@ export default function ReviewPage() {
                 <p style={{ display: 'inline', fontSize: '20px', fontWeight: 'normal', marginLeft:'20px'}}>{game.releaseDate}</p>
                 <ReactStars size={32} count={review.rating} color1={'yellow'} edit={ false } style={{ display: 'inline'}}/></h1>}
                 {game && <p style={{color: 'white', marginLeft: '350px', maxWidth: '700px'}}>{review.content}</p>}
+
+                {game && 
+                <div style={{float: 'right', marginTop: '-210px'}}>
+                    <RateCard/>
+                </div>}
             </div>
         }
         </>

@@ -201,5 +201,17 @@
             "content": "Played campaign for 3 hours, game crashed. Relaunched to find I had been permanently banned for manipulation of game data, which I don't even know how to do. Activision denied the appeal and I refunded through steam. This is an issue affecting tons of users.", 
             "date": "5-11-2022"
         }
+    ],
+    "lists": [
+        {
+            "id": 1, 
+            "name": "List_1", 
+            "userID": 2
+        },
+        {
+            "id": 2,
+            "name": "List_2", 
+            "userID": 3
+        }
     ]
 }

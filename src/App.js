@@ -3,8 +3,8 @@ import ReviewsFromFriends from "./ReviewsFromFriends";
 import ReviewPage from "./ReviewPage";
 import GameboxNavbar from "./GameboxNavbar";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ListsPage from "./ListsPage";
-import ListPage from "./ListPage";
+import ListsPage from "./list/ListsPage";
+import ListPage from "./list/ListPage";
 
 function App() {
 

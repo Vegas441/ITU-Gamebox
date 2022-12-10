@@ -9,12 +9,11 @@ import ListCard from './ListCard'
 export default function Lists({ lists }) {
   return (
     <>
-    <h1 style={{color: 'white', fontSize: '36px', textAlign: 'center', marginTop: '10%', fontWeight: 'normal'}}>My Lists</h1>
     <hr style={{color: '#14181c'}}/>
     <div className='container' style={{ display: 'flex', justifyContent: 'center'}}>
       {lists.map(list => {
         return (
-          <ListCard list={list}/>
+          <ListCard list={list} key={list.id}/>
         )
       })}
     </div>

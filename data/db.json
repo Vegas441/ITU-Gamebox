@@ -1,217 +1,241 @@
 {
-    "games": [
-        {
-            "id": 1,
-            "name": "Red Dead Redemption 2",
-            "releaseDate": 2018,
-            "image": "/posters/rdr2.jpg"
-        },
-        {
-            "id": 2, 
-            "name": "Elden Ring", 
-            "releaseDate": 2022,
-            "image": "/posters/elden_ring.jpg"
-        },
-        {
-            "id": 3, 
-            "name": "Mass Effect 3", 
-            "releaseDate": 2012,
-            "image": "/posters/me3.jpg"
-        },
-        {
-            "id": 4, 
-            "name": "Death Stranding", 
-            "releaseDate": 2019,
-            "image": "/posters/death_stranding.jpg"
-        },
-        {
-            "id": 5, 
-            "name": "God of War", 
-            "releaseDate": 2018,
-            "image": "/posters/gow.jpg"
-        },
-        {
-            "id": 6,
-            "name": "Divinity: Original Sin 2",
-            "releaseDate": 2017,
-            "image": "/posters/dos2.jpg"
-        },
-        {
-            "id": 7,
-            "name": "Crysis",
-            "releaseDate": 2007,
-            "image": "/posters/crysis.jpg"
-        },
-        {
-            "id": 8,
-            "name": "Call of Duty: Modern Warfare II",
-            "releaseDate": 2022,
-            "image": "/posters/codmw2.jpg"
-        },
-        {
-            "id": 9,
-            "name": "Grand Theft Auto 5",
-            "releaseDate": 2013,
-            "image": "/posters/gta5.jpg"
-        },
-        {
-            "id": 10,
-            "name": "Half-Life",
-            "releaseDate": 1998,
-            "image": "/posters/hl.jpg"
-        },
-        {
-            "id": 11,
-            "name": "Resident Evil 4",
-            "releaseDate": 2005,
-            "image": "/posters/re4.jpg"
-        },
-        {
-            "id": 12,
-            "name": "The Witcher 3: Wild Hunt",
-            "releaseDate": 2015,
-            "image": "/posters/tw3wh.jpg"
-        },
-        {
-            "id": 13,
-            "name": "The Last of Us",
-            "releaseDate": 2013,
-            "image": "/posters/tlou.jpg"
-        },
-        {
-            "id": 14,
-            "name": "The Elder Scrolls V: Skyrim",
-            "releaseDate": 2011,
-            "image": "/posters/skyrim.jpg"
-        },
-        {
-            "id": 15,
-            "name": "DOOM Eternal",
-            "releaseDate": 2020,
-            "image": "/posters/doometernal.jpg"
-        },
-        {
-            "id": 16,
-            "name": "Dead Space",
-            "releaseDate": 2007,
-            "image": "/posters/deadspace.webp"
-        },
-        {
-            "id": 17,
-            "name": "Grand Theft Auto: Vice City",
-            "releaseDate": 2002,
-            "image": "/posters/gtavc.webp"
-        },
-        {
-            "id": 18,
-            "name": "Bully",
-            "releaseDate": 2006,
-            "image": "/posters/bullt.jpg"
-        }
-    ],
-    "userProfiles": [
-        {
-            "id": 1,
-            "name": "User1234", 
-            "bio": "will add later" , 
-            "image": "/profile_pics/person_0.jpg"
-        }, 
-        {
-            "id": 2,
-            "name":"ShadowNinja", 
-            "bio": "will add later", 
-            "image": "/profile_pics/person_1.jpg"
-        },
-        {   "id": 3,
-            "name": "Anomaly", 
-            "bio": "will add later", 
-            "image": "profile_pics/person_2.png"
-        },
-        {
-            "id": 4,
-            "name": "Boris", 
-            "bio": "will add later", 
-            "image": "profile_pics/person_3.jpg"
-        },
-        {
-            "id": 5,
-            "name": "idk1234", 
-            "bio": "will add later", 
-            "image": "profile_pics/person_4.jpg"
-        },
-        {
-            "id": 6,
-            "name": "Shaman", 
-            "bio": "will add later", 
-            "image": "profile_pics/person_5.avif"
-        },
-        {
-            "id": 7,
-            "name": "iMolestToasters", 
-            "bio": "will add later", 
-            "image": "profile_pics/person_6.jpg"
-        },
-        {
-            "id": 8,
-            "name": "MoonshineProphet", 
-            "bio": "Avid gamer and D&D player", 
-            "image": "profile_pics/person_7.jpg"
-        },
-        {
-            "id": 9,
-            "name": "Herdyn", 
-            "bio": "You already know", 
-            "image": "profile_pics/person_8.jpg"
-        }
-    ],
-    "reviews": [
-        {
-            "id": 1, 
-            "name": "Review_0", 
-            "userID": 2, 
-            "gameID": 1, 
-            "rating": 5, 
-            "content": "Amazing, finally some good f*cking game.", 
-            "date": "26-10-2022"
-        },
-        {
-            "id": 2,
-            "name": "Review_1", 
-            "userID": 3, 
-            "gameID": 2, 
-            "rating": 4, 
-            "content": "Pretty good", 
-            "date": "11-11-2022"
-        },
-        {
-            "id": 3, 
-            "name": "Review_3", 
-            "userID": 4, 
-            "gameID": 4, 
-            "rating": 2, 
-            "content": "Walking simulator", 
-            "date": "5-11-2022"
-        },
-        {
-            "id": 4, 
-            "name": "Review_4", 
-            "userID": 9, 
-            "gameID": 8, 
-            "rating": 2, 
-            "content": "Played campaign for 3 hours, game crashed. Relaunched to find I had been permanently banned for manipulation of game data, which I don't even know how to do. Activision denied the appeal and I refunded through steam. This is an issue affecting tons of users.", 
-            "date": "5-11-2022"
-        }
-    ],
-    "lists": [
-        {
-            "id": 1, 
-            "name": "List_1", 
-            "userID": 2
-        },
-        {
-            "id": 2,
-            "name": "List_2", 
-            "userID": 3
-        }
-    ]
+  "games": [
+    {
+      "id": 1,
+      "name": "Red Dead Redemption 2",
+      "releaseDate": 2018,
+      "image": "/posters/rdr2.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Elden Ring",
+      "releaseDate": 2022,
+      "image": "/posters/elden_ring.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mass Effect 3",
+      "releaseDate": 2012,
+      "image": "/posters/me3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Death Stranding",
+      "releaseDate": 2019,
+      "image": "/posters/death_stranding.jpg"
+    },
+    {
+      "id": 5,
+      "name": "God of War",
+      "releaseDate": 2018,
+      "image": "/posters/gow.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Divinity: Original Sin 2",
+      "releaseDate": 2017,
+      "image": "/posters/dos2.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Crysis",
+      "releaseDate": 2007,
+      "image": "/posters/crysis.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Call of Duty: Modern Warfare II",
+      "releaseDate": 2022,
+      "image": "/posters/codmw2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Grand Theft Auto 5",
+      "releaseDate": 2013,
+      "image": "/posters/gta5.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Half-Life",
+      "releaseDate": 1998,
+      "image": "/posters/hl.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Resident Evil 4",
+      "releaseDate": 2005,
+      "image": "/posters/re4.jpg"
+    },
+    {
+      "id": 12,
+      "name": "The Witcher 3: Wild Hunt",
+      "releaseDate": 2015,
+      "image": "/posters/tw3wh.jpg"
+    },
+    {
+      "id": 13,
+      "name": "The Last of Us",
+      "releaseDate": 2013,
+      "image": "/posters/tlou.jpg"
+    },
+    {
+      "id": 14,
+      "name": "The Elder Scrolls V: Skyrim",
+      "releaseDate": 2011,
+      "image": "/posters/skyrim.jpg"
+    },
+    {
+      "id": 15,
+      "name": "DOOM Eternal",
+      "releaseDate": 2020,
+      "image": "/posters/doometernal.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Dead Space",
+      "releaseDate": 2007,
+      "image": "/posters/deadspace.webp"
+    },
+    {
+      "id": 17,
+      "name": "Grand Theft Auto: Vice City",
+      "releaseDate": 2002,
+      "image": "/posters/gtavc.webp"
+    },
+    {
+      "id": 18,
+      "name": "Bully",
+      "releaseDate": 2006,
+      "image": "/posters/bullt.jpg"
+    }
+  ],
+  "userProfiles": [
+    {
+      "id": 1,
+      "name": "User1234",
+      "bio": "will add later",
+      "image": "/profile_pics/person_0.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ShadowNinja",
+      "bio": "will add later",
+      "image": "/profile_pics/person_1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Anomaly",
+      "bio": "will add later",
+      "image": "profile_pics/person_2.png"
+    },
+    {
+      "id": 4,
+      "name": "Boris",
+      "bio": "will add later",
+      "image": "profile_pics/person_3.jpg"
+    },
+    {
+      "id": 5,
+      "name": "idk1234",
+      "bio": "will add later",
+      "image": "profile_pics/person_4.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Shaman",
+      "bio": "will add later",
+      "image": "profile_pics/person_5.avif"
+    },
+    {
+      "id": 7,
+      "name": "iMolestToasters",
+      "bio": "will add later",
+      "image": "profile_pics/person_6.jpg"
+    },
+    {
+      "id": 8,
+      "name": "MoonshineProphet",
+      "bio": "Avid gamer and D&D player",
+      "image": "profile_pics/person_7.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Herdyn",
+      "bio": "You already know",
+      "image": "profile_pics/person_8.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Review_0",
+      "userID": 2,
+      "gameID": 1,
+      "rating": 5,
+      "content": "Amazing, finally some good f*cking game.",
+      "date": "26-10-2022"
+    },
+    {
+      "id": 2,
+      "name": "Review_1",
+      "userID": 3,
+      "gameID": 2,
+      "rating": 4,
+      "content": "Pretty good",
+      "date": "11-11-2022"
+    },
+    {
+      "id": 3,
+      "name": "Review_3",
+      "userID": 4,
+      "gameID": 4,
+      "rating": 2,
+      "content": "Walking simulator",
+      "date": "5-11-2022"
+    },
+    {
+      "id": 4,
+      "name": "Review_4",
+      "userID": 9,
+      "gameID": 8,
+      "rating": 2,
+      "content": "Played campaign for 3 hours, game crashed. Relaunched to find I had been permanently banned for manipulation of game data, which I don't even know how to do. Activision denied the appeal and I refunded through steam. This is an issue affecting tons of users.",
+      "date": "5-11-2022"
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "name": "List_1",
+      "userID": 2,
+      "games": [
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "List_2",
+      "userID": 3,
+      "games": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "name": "asd",
+      "userID": "1",
+      "id": 3,
+      "games": [
+        "1",
+        "2",
+        "6"
+      ]
+    },
+    {
+      "name": "1",
+      "userID": "1",
+      "id": 4
+    }
+  ]
 }

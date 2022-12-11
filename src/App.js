@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ReviewsFromFriends from "./ReviewsFromFriends";
 import ReviewPage from "./ReviewPage";
+import MyReviews from "./MyReviews";
 import GameboxNavbar from "./GameboxNavbar";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import currentUser from "./current_user";
 
 
 function App() {
@@ -14,13 +16,6 @@ function App() {
   const [reviews, setReviews] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/userProfiles')
-    .then(res => {
-      return res.json();
-    })
-    .then(data => {
-      setProfiles(data);
-    });
     fetch('http://localhost:8000/reviews')
     .then(res => {
       return res.json();
@@ -34,8 +29,8 @@ function App() {
   return (
     <>
     <Router>
-      { userProfiles && <GameboxNavbar 
-      userProfile={userProfiles[0]}/>}
+      { currentUser && <GameboxNavbar 
+      userProfile={currentUser}/>}
 
       <Routes>
 
@@ -45,6 +40,10 @@ function App() {
 
         <Route exact path="/reviewpage/:reviewID" element={
           <ReviewPage />
+        }/>
+
+        <Route exact path="/myreviews" element={
+          <MyReviews />
         }/>
 
       </Routes>

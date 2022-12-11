@@ -36,6 +36,7 @@ export default function GameboxNavbar({ userProfile }) {
           
             <a><Nav.Link style={{color: '#99aabb'}}> Games </Nav.Link></a>
             <a><Nav.Link style={{color: '#99aabb'}}> Lists </Nav.Link></a>
+            <a><Nav.Link href="/myreviews" style={{color: '#99aabb'}}> My Reviews </Nav.Link></a>
             <a><Nav.Link><FaSearch style={{width: 30, color: '#99aabb'}}/></Nav.Link></a>
             <Button size='sm'> <b>+ LOG</b>  </Button>
           </Nav>

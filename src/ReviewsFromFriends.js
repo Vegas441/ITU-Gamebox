@@ -1,4 +1,5 @@
 import React from 'react'
+import currentUser from './current_user'
 import ReviewCard from './ReviewCard'
 
 /**
@@ -13,6 +14,7 @@ export default function ReviewsFromFriends({ reviews }) {
     <hr style={{color: '#14181c'}}/>
     <div className='container' style={{ display: 'flex', justifyContent: 'center'}}>
       {reviews.map(review => {
+        if(review.userID !== currentUser.id)
         return (
           <ReviewCard review={review}/>
         )

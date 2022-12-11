@@ -201,6 +201,42 @@
       "rating": 2,
       "content": "Played campaign for 3 hours, game crashed. Relaunched to find I had been permanently banned for manipulation of game data, which I don't even know how to do. Activision denied the appeal and I refunded through steam. This is an issue affecting tons of users.",
       "date": "5/11/2022"
+    },
+    {
+      "id": 5,
+      "name": "Review_5",
+      "userID": 8,
+      "gameID": 10,
+      "rating": 5,
+      "content": "Old but gold. This game is the best game i have ever played in my entire life despite literally being older than me ",
+      "date": "8/11/2022"
+    },
+    {
+      "id": 6,
+      "name": "review_6",
+      "userID": 1,
+      "gameID": 4,
+      "rating": 4,
+      "content": "Great game",
+      "date": "12/11/2022"
+    },
+    {
+      "id": 7,
+      "name": "review_7",
+      "userID": 1,
+      "gameID": 10,
+      "rating": 5,
+      "content": "Truly a masterpiece",
+      "date": "12/11/2022"
+    },
+    {
+      "id": 8,
+      "name": "review_8",
+      "userID": 1,
+      "gameID": 9,
+      "rating": 4,
+      "content": "GTA 5 is still a masterpiece. The open world is fantastic, the presentation is brilliant, the characters are well-written and the varied gameplay is still a lot of fun. Thanks to the technical improvements of the remastered version for PS5 the game still feels fresh and the gameplay is even better because of up to 60 fps in the two performance modes. ",
+      "date": "1/12/2022"
     }
   ]
 }

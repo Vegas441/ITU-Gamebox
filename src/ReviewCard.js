@@ -31,7 +31,7 @@ export default function ReviewCard({ review }) {
               alt=''
               width="25"
               height="25" 
-              style={{borderRadius: '50%', marginRight: '5px'}}
+              style={{borderRadius: '50%', marginRight: '2.1px'}}
             />}
              
             {user && <b>{user.name}</b>}

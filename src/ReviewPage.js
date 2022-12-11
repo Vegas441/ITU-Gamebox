@@ -33,7 +33,7 @@ export default function ReviewPage() {
         <>
         {review &&
             <div className="container">
-                {game && <GameCard game={game}/>}
+                {game && <GameCard gameId={gameID}/>}
                 {user &&    <img
                     src= {user.image}
                     alt=''

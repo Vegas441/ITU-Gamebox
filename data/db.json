@@ -126,43 +126,43 @@
       "id": 3,
       "name": "Anomaly",
       "bio": "will add later",
-      "image": "profile_pics/person_2.png"
+      "image": "/profile_pics/person_2.png"
     },
     {
       "id": 4,
       "name": "Boris",
       "bio": "will add later",
-      "image": "profile_pics/person_3.jpg"
+      "image": "/profile_pics/person_3.jpg"
     },
     {
       "id": 5,
       "name": "idk1234",
       "bio": "will add later",
-      "image": "profile_pics/person_4.jpg"
+      "image": "/profile_pics/person_4.jpg"
     },
     {
       "id": 6,
       "name": "Shaman",
       "bio": "will add later",
-      "image": "profile_pics/person_5.avif"
+      "image": "/profile_pics/person_5.avif"
     },
     {
       "id": 7,
       "name": "iMolestToasters",
       "bio": "will add later",
-      "image": "profile_pics/person_6.jpg"
+      "image": "/profile_pics/person_6.jpg"
     },
     {
       "id": 8,
       "name": "MoonshineProphet",
       "bio": "Avid gamer and D&D player",
-      "image": "profile_pics/person_7.jpg"
+      "image": "/profile_pics/person_7.jpg"
     },
     {
       "id": 9,
       "name": "Herdyn",
       "bio": "You already know",
-      "image": "profile_pics/person_8.jpg"
+      "image": "/profile_pics/person_8.jpg"
     }
   ],
   "reviews": [
@@ -237,6 +237,24 @@
       "rating": 4,
       "content": "GTA 5 is still a masterpiece. The open world is fantastic, the presentation is brilliant, the characters are well-written and the varied gameplay is still a lot of fun. Thanks to the technical improvements of the remastered version for PS5 the game still feels fresh and the gameplay is even better because of up to 60 fps in the two performance modes. ",
       "date": "1/12/2022"
+    },
+    {
+      "id": 9,
+      "name": "review_9",
+      "userID": 1,
+      "gameID": 8,
+      "rating": 4,
+      "content": "ok",
+      "date": "12/12/2022"
+    },
+    {
+      "id": 10,
+      "name": "review_10",
+      "userID": 1,
+      "gameID": 2,
+      "rating": 5,
+      "content": "Too good to be true ",
+      "date": "12/12/2022"
     }
   ]
 }

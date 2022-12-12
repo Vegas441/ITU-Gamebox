@@ -19,11 +19,14 @@ export default function RateCard({ game }) {
   const handleShow = () => setShow(true);
 
   const [userRating, setUserRating] = useState(0);
+  const [avgRating, setAvgRating] = useState(0.0);
 
   function changeRating(value) {
     console.log('new rating: ' + value);
     setUserRating(value);
   }
+
+
 
   /**
    * Gets the next id for new review from database
@@ -33,16 +36,28 @@ export default function RateCard({ game }) {
   const [highestIndex, setIndex] = useState(null);  // Object hook for finding next index
   //async function getNextId() {
     useEffect(() => {
-     fetch(`http://localhost:8000/reviews`).then(
+      fetch(`http://localhost:8000/reviews`).then(
       res => res.json()).then(
       data => {
-        setIndex(data);
         var lastRew = data[data.length - 1];
         //console.log(lastRew.id);
         setIndex(lastRew.id);
+        
+        let sum = 0;
+        let length = 0;
+        for(let i = 0; i < data.length; i++){
+          
+          if(game.id === data[i].gameID){
+            sum += data[i].rating;
+            length++;
+          }
+        }
+        setAvgRating(sum/length);
+        console.log(avgRating);
+        
       })
     
-    console.log(highestIndex)
+    //console.log(highestIndex)
     return 
   }, []);
   

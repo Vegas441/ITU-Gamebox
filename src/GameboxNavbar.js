@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export default function GameboxNavbar({ userProfile }) {
   return (
     <>
-      <Navbar fixedTop style={{backgroundColor: "#14181c", variant: "light"}}>
+      <Navbar style={{backgroundColor: "#14181c", variant: "light"}}>
         <Container>
           <Link to="/" style={{ textDecoration: 'none' }}>
             <Navbar.Brand href="#home">

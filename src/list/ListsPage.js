@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import ListAddButton from "./ListAddButton";
 import Lists from "./Lists";
-
+import { Button, Container } from 'react-bootstrap';
+import AddListPopup from "./AddListPopup";
+import './ListsPage.css';
 
 export default function ListsPage() {
-
+    const [popup, setPopup] = useState(false);
     const [lists, setLists] = useState(null);
 
     useEffect(() => {
@@ -23,9 +24,13 @@ export default function ListsPage() {
 
     return (
         <>
-        <ListAddButton onAddList={updateLists}/>
-        <h1 style={{color: 'white', fontSize: '36px', textAlign: 'center', marginTop: '10%', fontWeight: 'normal'}}>My Lists</h1>
-        { lists && <Lists lists={lists} />}
+        <Button style={{margin: '20px'}} onClick={() => setPopup(true)} type="submit" variant="outline-primary" size="sm">Add list</Button>
+        
+        <div class="container">
+            <h1 style={{color: 'white', fontSize: '36px', textAlign: 'center', fontWeight: 'normal'}}>Lists</h1>
+            { lists && <Lists lists={lists} />}
+        </div>        
+        <AddListPopup trigger={popup} popup={setPopup} addList={updateLists}></AddListPopup>
         </>
     );
 }

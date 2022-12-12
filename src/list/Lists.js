@@ -1,11 +1,6 @@
 import React from 'react'
 import ListCard from './ListCard'
 
-/**
- * Reviews from friends page - will serve as home page
- * @param {} param0 
- * @returns 
- */
 export default function Lists({ lists }) {
   return (
     <>

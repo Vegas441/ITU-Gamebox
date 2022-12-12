@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Dropdown, DropdownButton} from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
+import { DropdownMenu } from './DropdownMenu';
 import './Popup.css'
 
 function AddGametoListPopup(props) {
@@ -41,29 +42,3 @@ function AddGametoListPopup(props) {
 }
 
 export default AddGametoListPopup
-
-function DropdownMenu(props) {
-
-    const addGame = (game) => {
-        props.addGame(game)
-    }
-
-    return (
-        <>
-        <DropdownButton
-            className="dropdown-button" id='dropdown-basic-button' title='Add game'>
-            {props.games.map(game => {
-                return (
-                    <Dropdown.Item key={game.id} className='dropdown-item' 
-                        onClick={() => addGame(game)}>
-                        <div>
-                            <img alt={game.name} src={game.image} className='icon-button'/>
-                            {game.name}
-                        </div>                        
-                    </Dropdown.Item>
-                )
-            })}
-        </DropdownButton>
-        </>
-    )
-}

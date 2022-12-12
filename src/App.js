@@ -5,6 +5,8 @@ import GameboxNavbar from "./GameboxNavbar";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ListsPage from "./list/ListsPage";
 import ListPage from "./list/ListPage";
+import Register from "./register_login/Register";
+import Login from "./register_login/Login";
 
 function App() {
 
@@ -39,13 +41,20 @@ function App() {
       userProfile={userProfiles[0]}/>}
 
       <Routes>
-
         { reviews && <Route exact path="/" element={
           <ReviewsFromFriends reviews={reviews}/>
         }/>}
 
         <Route exact path="/reviewpage/:reviewID" element={
           <ReviewPage />
+        }/>
+
+        <Route exact path="/register" element={
+          <Register />
+        }/>
+
+        <Route exact path="/login" element={
+          <Login />
         }/>
 
         <Route exact path="/listspage" element={

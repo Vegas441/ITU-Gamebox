@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import currentUser from './current_user';
+import './NavBar.css';
 
 export default function GameboxNavbar({ userProfile }) {
   const user = currentUser;
@@ -39,9 +40,9 @@ export default function GameboxNavbar({ userProfile }) {
             <a><Nav.Link style={{color: '#99aabb'}}> Games </Nav.Link></a>
             <a><Nav.Link href="/listspage" style={{color: '#99aabb'}}> Lists </Nav.Link></a>
             <a><Nav.Link><FaSearch style={{width: 30, color: '#99aabb'}}/></Nav.Link></a>
-            <Link> <Button> <b>+ LOG</b>  </Button></Link>
-            <Link to="/register"> <Button> <b>Register</b>  </Button></Link>
-            <Link to="/login"> <Button> <b>Login</b>  </Button></Link>
+            <Link> <Button className='nav-btn'> <b>+ LOG</b>  </Button></Link>
+            <Link to="/register"> <Button className='nav-btn'> <b>Register</b>  </Button></Link>
+            <Link to="/login"> <Button className='nav-btn'> <b>Login</b>  </Button></Link>
           </Nav>
         </Container>
       </Navbar>

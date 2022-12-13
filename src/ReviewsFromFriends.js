@@ -14,7 +14,7 @@ export default function ReviewsFromFriends({ reviews }) {
     <div className='container' style={{ display: 'flex', justifyContent: 'center'}}>
       {reviews.map(review => {
         return (
-          <ReviewCard review={review}/>
+          <ReviewCard key={review.id} review={review}/>
         )
       })}
     </div>

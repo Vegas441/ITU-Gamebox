@@ -25,8 +25,9 @@ export default function ListCard({ list }) {
             <Card.Text style={{color: '#bbccdd', fontSize: '12px'}}>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     { list.name && <b>{list.name}</b> }
-                </div>  
-                { user && <img
+                </div>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '10px'}}>
+                    { user && <img
                     src= {user.image}
                     alt=''
                     width="25"
@@ -34,6 +35,8 @@ export default function ListCard({ list }) {
                     style={{borderRadius: '50%', marginRight: '5px'}}
                 />}
                 {user && <b>{user.name}</b>}
+                </div>
+                
             </Card.Text>
         </Card.Body>
         </Card>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Lists from "./Lists";
-import { Button, Container } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import AddListPopup from "./AddListPopup";
 import './ListsPage.css';
 

@@ -7,7 +7,7 @@ import ListsPage from "./list/ListsPage";
 import ListPage from "./list/ListPage";
 import Register from "./register_login/Register";
 import Login from "./register_login/Login";
-import ProfilePage from "./profile/ProfilePage";
+import Profile from "./profile/Profile";
 
 function App() {
 
@@ -50,8 +50,8 @@ function App() {
           <ReviewPage />
         }/>
 
-        <Route exact path="/profile" element={
-          <ProfilePage />
+        <Route exact path="/profile/:userID" element={
+          <Profile/>
         }/>
 
         <Route exact path="/register" element={

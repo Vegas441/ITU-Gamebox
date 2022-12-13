@@ -34,7 +34,9 @@ function AddGametoListPopup(props) {
         <div className='popup'>
             <div className='popup-inner'>
                 <Button onClick={() => props.popup(false)} className='close-btn'>close</Button>
-                <h3>Add game</h3>   
+                <div className='popup-div'>
+                    <h3>Add game</h3>
+                </div>
                 <DropdownMenu games={gamesToAdd} addGame={addGame}></DropdownMenu>
             </div>
         </div>

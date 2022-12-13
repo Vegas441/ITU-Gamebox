@@ -32,7 +32,7 @@ export default function GameboxNavbar({ userProfile }) {
               height="40"
               style={{borderRadius: '50%'}}
             />
-            <a><Nav.Link style={{color: '#99aabb', size: '24px', fontWeight: 'bold'}}>{userProfile.name}</Nav.Link></a>
+            <a><Nav.Link href="/profile" style={{color: '#99aabb', size: '24px', fontWeight: 'bold'}}>{userProfile.name}</Nav.Link></a>
           
             <a><Nav.Link style={{color: '#99aabb'}}> Games </Nav.Link></a>
             <a><Nav.Link href="/listspage" style={{color: '#99aabb'}}> Lists </Nav.Link></a>

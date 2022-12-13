@@ -3,18 +3,24 @@ import { useParams, useLocation } from "react-router-dom";
 import AddGametoListPopup from "./AddGametoListPopup";
 import GameCardList from "./GameCardList";
 import { Button } from "react-bootstrap";
+import './ListsPage.css';
+import currentUser from "../current_user";
 
 export default function ListPage() {
-
+    const user = currentUser;
     const [list, setList] = useState(null);
-    const [user, setUser] = useState(null);
+    const [listOwner, setListOwner] = useState(null);
     const [games, setGames] = useState([]);
     const [popup, setPopup] = useState(false);
-    
+    const [isOwner, setIsOwner] = useState(false);
 
     const location = useLocation()
-    const { userID } = location.state
+    const { userID: ownerID } = location.state
     let { listID } = useParams()
+
+    useEffect(() => {
+        if(user.id == ownerID) setIsOwner(true);
+    }, [user, ownerID])
 
     useEffect(() => {
         fetch(`http://localhost:8000/lists/${listID}`).then(res => {
@@ -23,9 +29,9 @@ export default function ListPage() {
             setList(data);
             if(data.games) getGames(data.games);
         });
-        if(userID) fetch(`http://localhost:8000/userProfiles/${userID}`).then(res => {
+        if(ownerID) fetch(`http://localhost:8000/userProfiles/${ownerID}`).then(res => {
             return res.json();
-        }).then(data => {setUser(data)});
+        }).then(data => {setListOwner(data)});
     }, []);
 
     const getGames = (games) => {
@@ -52,26 +58,49 @@ export default function ListPage() {
         })
     }
 
+    const deleteList = (list) => {
+        fetch(`http://localhost:8000/lists/${listID}`, {
+            method: 'DELETE',
+        });
+    }
+
+    const removeGame = (game) => {
+        var after_delete = games.filter(g => g.id != game.id);
+        setGames(after_delete);
+        if(!list.games)
+            list["games"] = []
+        list.games = after_delete.map(g => JSON.stringify(g.id));
+        fetch(`http://localhost:8000/lists/${listID}`, {
+            method: 'PUT',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(list)
+        })
+    }
+
     return (
         <>
         {list &&
-            <div className="container">
-                <div>
-                    {list && <h1 style={{color: 'white', marginLeft: '350px', fontWeight: 'bold'}}>{list.name}</h1>}
-                    {user &&    <img
-                        src= {user.image}
+            <div>
+                {isOwner && <>
+                <Button className="add-btn" href="/listspage" onClick={() => deleteList(list)} type="submit" variant="outline-danger" size="lg">Delete list</Button>
+                <Button className="add-btn" onClick={() => setPopup(true)} type="submit" variant="outline-primary" size="lg">Add game</Button>
+                </> }
+                <div className="list-container">
+                    <div className="list-container">                    
+                        {list && <h1>{list.name}</h1>}
+                    </div>                  
+                    {listOwner &&    <img
+                        src= {listOwner.image}
                         alt=''
                         width="50"
                         height="50" 
-                        style={{borderRadius: '50%'}}
+                        style={{borderRadius: '50%', margin: '10px'}}
                         />
                     }
-                    <p style={{ color: 'white', fontSize: '22px',display: 'inline', position: 'relative', left: '15px' }}>Created by {user &&  <b>{user.name}</b>}</p>
+                    <p style={{ color: 'white', fontSize: '22px', display: 'inline'}}>Created by {listOwner &&  <b>{listOwner.name}</b>}</p>
+                    {games && <GameCardList removeGame={removeGame} isOwner={isOwner} games={games}></GameCardList>}
                 </div>
-                
-                <Button onClick={() => setPopup(true)} type="submit" variant="outline-primary" size="sm">Add game</Button>
-                {games && <AddGametoListPopup trigger={popup} popup={setPopup} gamesOnList={games} addGame={addGame}></AddGametoListPopup> }                
-                {games && <GameCardList games={games}></GameCardList>}
+                {games && <AddGametoListPopup trigger={popup} popup={setPopup} gamesOnList={games} addGame={addGame}></AddGametoListPopup> }
             </div>
         }
         </>

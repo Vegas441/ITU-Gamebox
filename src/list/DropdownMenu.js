@@ -11,10 +11,10 @@ export function DropdownMenu(props) {
     return (
         <>
             <DropdownButton
-                className="dropdown-button" id='dropdown-basic-button' title='Add game'>
+                className="dropdown-button" id='dropdown-basic-button' title='Select game'>
                 {props.games.map(game => {
                     return (
-                        <Dropdown.Item key={game.id} className='dropdown-item'
+                        <Dropdown.Item key={game.id}
                             onClick={() => addGame(game)}>
                             <div>
                                 <img alt={game.name} src={game.image} className='icon-button' />

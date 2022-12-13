@@ -1,4 +1,4 @@
-section {
+.form-section {
     width: 100%;
     color: white;
     max-width: 420px;
@@ -11,7 +11,7 @@ section {
     margin-left:auto;
 }
 
-form {
+.my-form {
     color: white;
     display: flex;
     flex-direction: column;

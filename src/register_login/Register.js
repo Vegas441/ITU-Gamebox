@@ -51,13 +51,14 @@ const Register = () => {
         // if button enabled with JS hack
         const v1 = USER_REGEX.test(user);
         const v2 = PWD_REGEX.test(pwd);
+        const image = "/profile_pics/default.jpg";
         if (!v1 || !v2) {
             setErrMsg("Invalid Entry");
             return;
         }
         try {
             const response = await axios.post(REGISTER_URL,
-                JSON.stringify({ name: user, pwd }),
+                JSON.stringify({ name: user, pwd, image }),
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
@@ -79,17 +80,17 @@ const Register = () => {
     return (
         <>
             {success ? (
-                <section>
+                <section className='form-section'>
                     <h1>Success!</h1>
                     <p>
-                        <a href="#">Sign In</a>
+                        <a href="#">Login</a>
                     </p>
                 </section>
             ) : (
-                <section>
+                <section className='form-section'>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                     <h1>Register</h1>
-                    <form onSubmit={handleSubmit}>
+                    <form className='my-form' onSubmit={handleSubmit}>
                         <label htmlFor="username">
                             Username:
                             <FontAwesomeIcon icon={faCheck} className={validName ? "valid" : "hide"} />

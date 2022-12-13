@@ -34,10 +34,6 @@
     --border-radius: 8px;
 }
 
-a {
-    color: black;
-}
-
 .icon-button {
     --button-size: calc(var(--nav-size) * 0.5);
     width: var(--button-size);
@@ -55,7 +51,6 @@ a {
 .dropdown-menu {
     max-height: 350px;
     overflow-y: scroll;
-    --text-color: white;
 }
 
 .dropdown-item {
@@ -67,11 +62,21 @@ a {
     padding: 0.5rem;
 }
 
+.dropdown-item div {
+    color: black;
+}
+
 .icon-right {
     margin-left: auto;
 }
 
 .dropdown-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-div {
     display: flex;
     justify-content: center;
     align-items: center;

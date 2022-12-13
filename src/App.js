@@ -7,6 +7,7 @@ import ListsPage from "./list/ListsPage";
 import ListPage from "./list/ListPage";
 import Register from "./register_login/Register";
 import Login from "./register_login/Login";
+import ProfilePage from "./profile/ProfilePage";
 
 function App() {
 
@@ -47,6 +48,10 @@ function App() {
 
         <Route exact path="/reviewpage/:reviewID" element={
           <ReviewPage />
+        }/>
+
+        <Route exact path="/profile" element={
+          <ProfilePage />
         }/>
 
         <Route exact path="/register" element={

@@ -106,7 +106,7 @@
       "id": 18,
       "name": "Bully",
       "releaseDate": 2006,
-      "image": "/posters/bullt.jpg"
+      "image": "/posters/bully.jpg"
     }
   ],
   "userProfiles": [
@@ -126,43 +126,49 @@
       "id": 3,
       "name": "Anomaly",
       "bio": "will add later",
-      "image": "profile_pics/person_2.png"
+      "image": "/profile_pics/person_2.png"
     },
     {
       "id": 4,
       "name": "Boris",
       "bio": "will add later",
-      "image": "profile_pics/person_3.jpg"
+      "image": "/profile_pics/person_3.jpg"
     },
     {
       "id": 5,
       "name": "idk1234",
       "bio": "will add later",
-      "image": "profile_pics/person_4.jpg"
+      "image": "/profile_pics/person_4.jpg"
     },
     {
       "id": 6,
       "name": "Shaman",
       "bio": "will add later",
-      "image": "profile_pics/person_5.avif"
+      "image": "/profile_pics/person_5.avif"
     },
     {
       "id": 7,
       "name": "iMolestToasters",
       "bio": "will add later",
-      "image": "profile_pics/person_6.jpg"
+      "image": "/profile_pics/person_6.jpg"
     },
     {
       "id": 8,
       "name": "MoonshineProphet",
       "bio": "Avid gamer and D&D player",
-      "image": "profile_pics/person_7.jpg"
+      "image": "/profile_pics/person_7.jpg"
     },
     {
       "id": 9,
       "name": "Herdyn",
       "bio": "You already know",
-      "image": "profile_pics/person_8.jpg"
+      "image": "/profile_pics/person_8.jpg"
+    },
+    {
+      "name": "test1",
+      "pwd": "Testpass1!",
+      "image": "/profile_pics/default.jpg",
+      "id": 10
     }
   ],
   "reviews": [
@@ -223,44 +229,10 @@
       ]
     },
     {
-      "name": "asd",
-      "userID": "1",
+      "name": "hello",
+      "userID": 1,
       "id": 3,
-      "games": [
-        "1",
-        "2",
-        "6"
-      ]
-    },
-    {
-      "name": "1",
-      "userID": "1",
-      "id": 4,
-      "games": [
-        "2",
-        "3",
-        "1"
-      ]
-    },
-    {
-      "name": "a",
-      "userID": "1",
-      "id": 5,
-      "games": [
-        "1",
-        "2",
-        "3"
-      ]
-    },
-    {
-      "name": "a",
-      "userID": "1",
-      "id": 6
-    },
-    {
-      "name": "Hello world",
-      "userID": "1",
-      "id": 7
+      "games": []
     }
   ]
 }

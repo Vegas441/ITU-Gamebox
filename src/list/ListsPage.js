@@ -24,10 +24,10 @@ export default function ListsPage() {
 
     return (
         <>
-        <Button style={{margin: '20px'}} onClick={() => setPopup(true)} type="submit" variant="outline-primary" size="sm">Add list</Button>
+        <Button className="add-btn" onClick={() => setPopup(true)} type="submit" variant="outline-primary" size="lg">Add list</Button>
         
-        <div class="container">
-            <h1 style={{color: 'white', fontSize: '36px', textAlign: 'center', fontWeight: 'normal'}}>Lists</h1>
+        <div class="list-container">
+            <h1>Lists</h1>
             { lists && <Lists lists={lists} />}
         </div>        
         <AddListPopup trigger={popup} popup={setPopup} addList={updateLists}></AddListPopup>

@@ -51,7 +51,7 @@ const Login = () => {
     return (
         <>
             {success ? (
-                <section>
+                <section className='form-section'>
                     <h1>You are logged in!</h1>
                     <br />
                     <p>
@@ -59,10 +59,10 @@ const Login = () => {
                     </p>
                 </section>
             ) : (
-                <section>
+                <section className='form-section'>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                     <h1>Login</h1>
-                    <form onSubmit={handleSubmit}>
+                    <form className='my-form' onSubmit={handleSubmit}>
                         <label htmlFor="username">Username:</label>
                         <input
                             type="text"

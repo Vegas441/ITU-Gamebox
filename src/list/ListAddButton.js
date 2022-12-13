@@ -1,9 +1,10 @@
 import React, {  useState } from 'react';
 import { Button } from 'react-bootstrap';
+import currentUser from '../current_user';
 
 export default function ListAddButton({onAddList}) {
     const [name, setListName] = useState('');
-    const [userID, setUserID] = useState('1');
+    const userID = currentUser.id;
 
 
     const handleSubmit = (e) => {
@@ -22,14 +23,25 @@ export default function ListAddButton({onAddList}) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input 
-                type="text" 
-                required 
-                value={name}
-                onChange={(e) => setListName(e.target.value)}
-            />
-            <Button type="submit" variant="outline-primary" size="sm">Add list</Button>
-        </form>
+        <>
+        <div class='popup-container'>
+            <form onSubmit={handleSubmit}>
+                <div className='popup-div'>
+                    <h3>List name</h3>
+                </div>
+                <div className='popup-div'>
+                    <input 
+                            type="text" 
+                            required 
+                            value={name}
+                            onChange={(e) => setListName(e.target.value)}
+                        />
+                    </div>                
+                    <div className='popup-div'>
+                        <Button type="submit" variant="outline-primary" size="sm">Add list</Button>
+                </div>
+            </form>
+        </div>
+        </>   
     )
 }

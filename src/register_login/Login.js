@@ -82,7 +82,7 @@ const Login = () => {
                             value={pwd}
                             required
                         />
-                        <Button type='submit'>Login</Button>
+                        <Button className='reg-btn' type='submit'>Login</Button>
                     </form>
                     <p>
                         Need an Account?<br />

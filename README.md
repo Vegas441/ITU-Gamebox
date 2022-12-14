@@ -1,10 +1,10 @@
 # ITU - Gamebox
 
-# Installation 
+## Installation 
 npm install 
 
-# Launch json server
+## Launch json server
 sh server.sh
 
-# Launch Gamebox app
+## Launch Gamebox app
 npm start

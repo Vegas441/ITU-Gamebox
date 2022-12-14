@@ -9,11 +9,15 @@ import Register from "./register_login/Register";
 import Login from "./register_login/Login";
 import Profile from "./profile/Profile";
 import currentUser from "./current_user";
+import GamesPage from "./GamesPage";
+import GamePage from "./GamePage";
 
 function App() {
 
   //const [games, setGames] = useState(null);
   const user = currentUser;
+
+  const [games, setGames] = useState(null);
     
   const [userProfiles, setProfiles] = useState(null);
     
@@ -27,6 +31,13 @@ function App() {
     .then(data => {
       setReviews(data);
     });
+    fetch('http://localhost:8000/games')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      setGames(data);
+    })
   }, []);
 
 
@@ -35,6 +46,7 @@ function App() {
     <Router>
       { user && <GameboxNavbar 
       userProfile={currentUser}/>}
+
 
       <Routes>
         { reviews && <Route exact path="/" element={
@@ -63,6 +75,14 @@ function App() {
 
         <Route exact path="/listpage/:listID" element={
           <ListPage />
+        }/>
+
+        { games && <Route exact path="/gamespage" element={
+          <GamesPage games={games}/>
+        }/>}
+
+        <Route exact path="/gamespage/:gameID" element={
+          <GamePage />
         }/>
 
       </Routes>

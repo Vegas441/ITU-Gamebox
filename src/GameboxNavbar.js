@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar'
+import Search from './Search.js'
 import currentUser from './current_user';
 import './NavBar.css';
 
 export default function GameboxNavbar({ userProfile }) {
+    const [games, setGames] = useState(null);
+    const [searchButton, setSearchButton] = useState(false);
+    const setSearchBtn = () => {
+      setSearchButton(true);
+    };
+
+    useEffect(() => {
+      fetch('http://localhost:8000/games')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        setGames(data);
+      })
+    }, []);
   const user = currentUser;
   return (
     <>
@@ -37,15 +54,18 @@ export default function GameboxNavbar({ userProfile }) {
             />
             <a><Nav.Link href={"/profile/" + user.id} style={{color: '#99aabb', size: '24px', fontWeight: 'bold'}}>{user.name}</Nav.Link></a>
           
-            <a><Nav.Link style={{color: '#99aabb'}}> Games </Nav.Link></a>
+            <Link to="/gamespage" className='nav-link' style={{color: '#99aabb'}}> Games </Link>
             <a><Nav.Link href="/listspage" style={{color: '#99aabb'}}> Lists </Nav.Link></a>
-            <a><Nav.Link><FaSearch style={{width: 30, color: '#99aabb'}}/></Nav.Link></a>
+            <button className="searchbutton" onClick={setSearchBtn}><FaSearch style={{width: 30, color: '#99aabb'}}/></button>
             <Link> <Button className='nav-btn'> <b>+ LOG</b>  </Button></Link>
             <Link to="/register"> <Button className='nav-btn'> <b>Register</b>  </Button></Link>
             <Link to="/login"> <Button className='nav-btn'> <b>Login</b>  </Button></Link>
           </Nav>
         </Container>
       </Navbar>
+        <SearchBar trigger={searchButton} setTrigger={setSearchButton}> 
+            <Search placeholder="Enter a Game Name" games={games} />
+        </SearchBar>
     </>
   )
 }

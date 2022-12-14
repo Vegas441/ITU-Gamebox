@@ -34,7 +34,7 @@ function GamesPage() {
             Sort In
           </Dropdown.Toggle>
 
-          <Dropdown.Menu variant="dark">
+          <Dropdown.Menu className="sortList" variant="dark">
             <Dropdown.Item onClick={()=>setOrder('asc')}>Ascending Order</Dropdown.Item>
             <Dropdown.Item onClick={()=>setOrder('desc')}>Descending Order</Dropdown.Item>
           </Dropdown.Menu>

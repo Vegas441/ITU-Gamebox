@@ -20,11 +20,11 @@
 
 .searchbar-inner .close-btn {
     position: absolute;
-    top: 12px;
-    right: 115px;
+    top: 0px;
+    right:90px;
     background-color: transparent;
     color: black;
-    z-index: 500;
+    z-index: 1002;
     border: 0px;
 }
 

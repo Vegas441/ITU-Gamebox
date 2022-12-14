@@ -16,6 +16,14 @@
 .sortBtn button {
     background-color: #14181C;
     color: white;
-    width: 150px;
+    width: 160px;
     height: 50px;
+}
+
+.sortList {
+    width: 100px;
+}
+
+.sortList::-webkit-scrollbar {
+    display: none;
 }

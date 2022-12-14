@@ -4,109 +4,127 @@
             "id": 1,
             "name": "Red Dead Redemption 2",
             "releaseDate": 2018,
-            "image": "/posters/rdr2.jpg"
+            "image": "/posters/rdr2.jpg",
+            "desc": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption."
         },
         {
             "id": 2, 
             "name": "Elden Ring", 
             "releaseDate": 2022,
-            "image": "/posters/elden_ring.jpg"
+            "image": "/posters/elden_ring.jpg",
+            "desc": "Elden Ring is a 2022 action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment."
         },
         {
             "id": 3, 
             "name": "Mass Effect 3", 
             "releaseDate": 2012,
-            "image": "/posters/me3.jpg"
+            "image": "/posters/me3.jpg",
+            "desc": "Mass Effect 3 is an action role-playing video game developed by BioWare and published by Electronic Arts. The third major entry in the Mass Effect series and the final installment of the original trilogy, it was released in March 2012 for Microsoft Windows, Xbox 360, and PlayStation 3."
         },
         {
             "id": 4, 
             "name": "Death Stranding", 
             "releaseDate": 2019,
-            "image": "/posters/death_stranding.jpg"
+            "image": "/posters/death_stranding.jpg",
+            "desc": "Death Stranding is a 2019 action game developed by Kojima Productions and published by Sony Interactive Entertainment for the PlayStation 4. It is the first game from director Hideo Kojima and Kojima Productions after their split from Konami in 2015."
         },
         {
             "id": 5, 
             "name": "God of War", 
             "releaseDate": 2018,
-            "image": "/posters/gow.jpg"
+            "image": "/posters/gow.jpg",
+            "desc": "God of War is an action-adventure game franchise created by David Jaffe at Sony's Santa Monica Studio. It began in 2005 on the PlayStation 2 video game console and has become a flagship series for PlayStation, consisting of nine installments across multiple platforms."
         },
         {
             "id": 6,
             "name": "Divinity: Original Sin 2",
             "releaseDate": 2017,
-            "image": "/posters/dos2.jpg"
+            "image": "/posters/dos2.jpg",
+            "desc": "Divinity: Original Sin II is a role-playing video game developed and published by Larian Studios. The sequel to 2014's Divinity: Original Sin, it was released for Microsoft Windows in September 2017, for PlayStation 4 and Xbox One in August 2018, for macOS in January 2019, Nintendo Switch in September 2019, and iPadOS in May 2021. The game was a critical and commercial success, with it selling over a million copies in two months and being cited as one of the best role-playing games of all time, with praise given to its combat complexity and interactivity."
         },
         {
             "id": 7,
             "name": "Crysis",
             "releaseDate": 2007,
-            "image": "/posters/crysis.jpg"
+            "image": "/posters/crysis.jpg",
+            "desc": "Crysis is a first-person shooter video game series created by Crytek. The series revolves around a group of military protagonists with nanosuits, technologically advanced suits of armor that give them enhanced physical strength, speed, defense, and cloaking abilities."
         },
         {
             "id": 8,
             "name": "Call of Duty: Modern Warfare II",
             "releaseDate": 2022,
-            "image": "/posters/codmw2.jpg"
+            "image": "/posters/codmw2.jpg",
+            "desc": "Call of Duty: Modern Warfare II is a 2022 first-person shooter game developed by Infinity Ward and published by Activision. It is a sequel to the 2019 reboot, and serves as the nineteenth installment in the overall Call of Duty series."
         },
         {
             "id": 9,
             "name": "Grand Theft Auto 5",
             "releaseDate": 2013,
-            "image": "/posters/gta5.jpg"
+            "image": "/posters/gta5.jpg",
+            "desc": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall."
         },
         {
             "id": 10,
             "name": "Half-Life",
             "releaseDate": 1998,
-            "image": "/posters/hl.jpg"
+            "image": "/posters/hl.jpg",
+            "desc": "Half-Life is a series of first-person shooter games developed and published by Valve. The games combine shooting combat, puzzles and storytelling. The original Half-Life, Valve's first product, was released in 1998 for Windows to critical and commercial success."
         },
         {
             "id": 11,
             "name": "Resident Evil 4",
             "releaseDate": 2005,
-            "image": "/posters/re4.jpg"
+            "image": "/posters/re4.jpg",
+            "desc": "Resident Evil 4 is a 2005 survival horror third-person shooter game developed by Capcom Production Studio 4 and published by Capcom. It was originally released for the GameCube on January 11, 2005."
         },
         {
             "id": 12,
             "name": "The Witcher 3: Wild Hunt",
             "releaseDate": 2015,
-            "image": "/posters/tw3wh.jpg"
+            "image": "/posters/tw3wh.jpg",
+            "desc": "The Witcher 3: Wild Hunt is a 2015 action role-playing game developed and published by CD Projekt. It is the sequel to the 2011 game The Witcher 2: Assassins of Kings and the third game in The Witcher video game series, played in an open world with a third-person perspective."
         },
         {
             "id": 13,
             "name": "The Last of Us",
             "releaseDate": 2013,
-            "image": "/posters/tlou.jpg"
+            "image": "/posters/tlou.jpg",
+            "desc": "The Last of Us is a 2013 action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. Players control Joel, a smuggler tasked with escorting a teenage girl, Ellie, across a post-apocalyptic United States. The Last of Us is played from a third-person perspective."
         },
         {
             "id": 14,
             "name": "The Elder Scrolls V: Skyrim",
             "releaseDate": 2011,
-            "image": "/posters/skyrim.jpg"
+            "image": "/posters/skyrim.jpg",
+            "desc": "The Elder Scrolls V: Skyrim is an action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks."
         },
         {
             "id": 15,
             "name": "DOOM Eternal",
             "releaseDate": 2020,
-            "image": "/posters/doometernal.jpg"
+            "image": "/posters/doometernal.jpg",
+            "desc": "Doom Eternal is a first-person shooter game developed by id Software and published by Bethesda Softworks."
         },
         {
             "id": 16,
             "name": "Dead Space",
             "releaseDate": 2007,
-            "image": "/posters/deadspace.webp"
+            "image": "/posters/deadspace.webp",
+            "desc": "Dead Space is a 2008 survival horror video game developed by EA Redwood Shores and published by Electronic Arts. It was released for PlayStation 3, Xbox 360, and Microsoft Windows as the debut entry in the Dead Space series."
         },
         {
             "id": 17,
             "name": "Grand Theft Auto: Vice City",
             "releaseDate": 2002,
-            "image": "/posters/gtavc.webp"
+            "image": "/posters/gtavc.webp",
+            "desc": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the fourth main entry in the Grand Theft Auto series, following 2001's Grand Theft Auto III, and the sixth instalment overall."
         },
         {
             "id": 18,
             "name": "Bully",
             "releaseDate": 2006,
-            "image": "/posters/bullt.jpg"
+            "image": "/posters/bully.jpg",
+            "desc": "Bully is an action-adventure video game developed by Rockstar Vancouver and published by Rockstar Games. It was released on 17 October 2006 for the PlayStation 2."
         }
     ],
     "userProfiles": [
@@ -125,43 +143,43 @@
         {   "id": 3,
             "name": "Anomaly", 
             "bio": "will add later", 
-            "image": "profile_pics/person_2.png"
+            "image": "/profile_pics/person_2.png"
         },
         {
             "id": 4,
             "name": "Boris", 
             "bio": "will add later", 
-            "image": "profile_pics/person_3.jpg"
+            "image": "/profile_pics/person_3.jpg"
         },
         {
             "id": 5,
             "name": "idk1234", 
             "bio": "will add later", 
-            "image": "profile_pics/person_4.jpg"
+            "image": "/profile_pics/person_4.jpg"
         },
         {
             "id": 6,
             "name": "Shaman", 
             "bio": "will add later", 
-            "image": "profile_pics/person_5.avif"
+            "image": "/profile_pics/person_5.avif"
         },
         {
             "id": 7,
             "name": "iMolestToasters", 
             "bio": "will add later", 
-            "image": "profile_pics/person_6.jpg"
+            "image": "/profile_pics/person_6.jpg"
         },
         {
             "id": 8,
             "name": "MoonshineProphet", 
             "bio": "Avid gamer and D&D player", 
-            "image": "profile_pics/person_7.jpg"
+            "image": "/profile_pics/person_7.jpg"
         },
         {
             "id": 9,
             "name": "Herdyn", 
             "bio": "You already know", 
-            "image": "profile_pics/person_8.jpg"
+            "image": "/profile_pics/person_8.jpg"
         }
     ],
     "reviews": [

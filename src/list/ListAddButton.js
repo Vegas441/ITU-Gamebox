@@ -30,7 +30,8 @@ export default function ListAddButton({onAddList}) {
                     <h3>List name</h3>
                 </div>
                 <div className='popup-div'>
-                    <input 
+                    <input
+                            className='list-name-input'
                             type="text" 
                             required 
                             value={name}

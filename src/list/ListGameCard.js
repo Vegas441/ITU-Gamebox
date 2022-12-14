@@ -15,7 +15,7 @@ export default function ListGameCard(props) {
             { isHovered && props.isOwner && (
                 <Button onClick={() => removeGame(props.game)} variant="danger" className="remove-btn" size="sm">Remove</Button>
             )}
-            <a href={"/games/" + props.game.id}>
+            <a href={"/gamespage/" + props.game.id}>
                 <img alt={props.game.id} src={props.game.image} className="list-item"/>
 
             </a>

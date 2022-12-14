@@ -4,6 +4,7 @@ import GameCard from './GameCard';
 import reactStars from 'react-stars';
 import ReactStars from 'react-stars';
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 export default function MyReviews() {
 
@@ -17,9 +18,14 @@ export default function MyReviews() {
         })
         .then(data => {
           setReviews(data);
-          //console.log(data);
         });
       }, []);
+
+    const deleteReview = (review) => {
+        fetch(`http://localhost:8000/reviews/${review.id}`,{
+            method: 'DELETE'
+        }).then(alert('Review deleted'));
+    }
 
     return (
         <>
@@ -40,8 +46,10 @@ export default function MyReviews() {
                                     <p style={{fontSize: '16px', color: '#99aabb'}}>{review.date}</p> <br/>
                                     <p style={{maxWidth: '1200px'}}>{review.content}</p>
                                 </p>
+                                
                             </div>
                         </div>
+                        <Button href="/myreviews" variant="danger" style={{marginLeft: '1650px', marginTop: '-150px'}} onClick={() => deleteReview(review)}>Delete review</Button>
                         <hr style={{color: '#14181c'}}/>
                         <br/>
                       

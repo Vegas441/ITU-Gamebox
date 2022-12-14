@@ -11,6 +11,7 @@ import Profile from "./profile/Profile";
 import currentUser from "./current_user";
 import GamesPage from "./GamesPage";
 import GamePage from "./GamePage";
+import MyReviews from "./MyReviews";
 
 function App() {
 
@@ -44,14 +45,17 @@ function App() {
   return (
     <>
     <Router>
-      { user && <GameboxNavbar 
-      userProfile={currentUser}/>}
+      { user && <GameboxNavbar/>}
 
 
       <Routes>
         { reviews && <Route exact path="/" element={
           <ReviewsFromFriends reviews={reviews}/>
         }/>}
+
+        <Route exact path="/myreviews" element={
+          <MyReviews/>
+        }/>
 
         <Route exact path="/reviewpage/:reviewID" element={
           <ReviewPage />

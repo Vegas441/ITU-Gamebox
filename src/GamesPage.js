@@ -47,7 +47,7 @@ function GamesPage() {
                   <Link to={`/gamespage/${game.id}`} style={{ textDecoration: 'none' }}>
                   <div className='gamecard'>
                   <Card style={{ width: '10rem', margin: '15px', backgroundColor: "#445566" }}>
-                      { games && <Card.Img variant="top" src={game.image} style={{height: '175px'}} />}
+                      { games && <Card.Img variant="top" src={game.image} style={{height: '220px'}} />}
                       <div className='cardBody'>
                       <Card.Body style={{padding: '8px'}}>
                       <Card.Text style={{color: '#bbccdd', fontSize: '12px'}}>

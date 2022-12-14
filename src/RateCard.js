@@ -34,7 +34,6 @@ export default function RateCard({ game }) {
    * @returns 
    */ 
   const [highestIndex, setIndex] = useState(null);  // Object hook for finding next index
-  //async function getNextId() {
     useEffect(() => {
       fetch(`http://localhost:8000/reviews`).then(
       res => res.json()).then(
@@ -57,7 +56,6 @@ export default function RateCard({ game }) {
         
       })
     
-    //console.log(highestIndex)
     return 
   }, []);
   
@@ -98,22 +96,12 @@ export default function RateCard({ game }) {
         className="mb-2"
         style={{width: '16rem', height: '20rem', backgroundColor: '#445566'}}
       >
-        {/*
-        <CardHeader>
-          <GrGamepad style={{width: 80}}/>
-        </CardHeader>
-        */}
-
-        {/*<div style={{marginLeft: '2.3rem', marginBottom: '-10px'}}>
-          <ReactStars size={40} count={5} color1={'#334455'} color2={'#40bcf4'} edit={ true } style={{}}/>
-        </div>
-        <hr/>*/}
         <Card.Text>
           <Button variant='text' onClick={handleShow} style={{marginTop: '5%', marginLeft: '30%', marginBottom: '-8%'}}>
           <p style={{color: 'white', fontSize: '20px'}}>Review</p>
           </Button>
           <hr/>
-          <p style={{color: 'white', fontSize: '20px', marginLeft: '30%'}}>Add to list</p>
+          <p style={{color: 'white', fontSize: '20px', marginLeft: '30%'}}><a href="/listspage" style={{textDecoration: 'none'}}>Add to list</a></p>
           <hr/>
           <p style={{color: 'white', fontSize: '20px', marginLeft: '37%'}}>Share</p>
           <hr/>

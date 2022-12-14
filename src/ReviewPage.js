@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, Link } from "react-router-dom";
 import ReactStars from "react-stars";
 import GameCard from './GameCard';
 import RateCard from "./RateCard";
@@ -33,7 +33,8 @@ export default function ReviewPage() {
         <>
         {review &&
             <div className="container">
-                {game && <GameCard gameId={gameID}/>}
+                
+                {game && <Link to={`/gamespage/${game.id}`}><GameCard gameId={gameID}/></Link>}
                 {user &&    <img
                     src= {user.image}
                     alt=''
@@ -42,7 +43,8 @@ export default function ReviewPage() {
                     style={{borderRadius: '50%', marginTop: '-150px', marginLeft: '75px'}}
                 />
                 }
-                <p style={{ color: 'white', fontSize: '22px',display: 'inline', position: 'relative', bottom: '70px', left: '15px' }}>Review by {user &&  <b>{user.name}</b>}</p>
+                <p style={{ color: 'white', fontSize: '22px',display: 'inline', position: 'relative', bottom: '70px', left: '15px' }}>Review by
+                {user && <Link to={`/profile/${user.id}`} style={{textDecoration: 'none', color: 'white'}}>  <b>{user.name}</b></Link>}</p>
                 <div style={{marginLeft: '-5%'}}>
                 <hr style={{color: '#14181c', width: '500px', marginLeft: '350px', marginTop: '-250px'}}/>
                 {game && <h1 style={{color: 'white', marginLeft: '350px', fontWeight: 'bold'}}>{game.name}

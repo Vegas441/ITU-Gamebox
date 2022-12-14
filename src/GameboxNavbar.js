@@ -10,7 +10,7 @@ import Search from './Search.js'
 import currentUser from './current_user';
 import './NavBar.css';
 
-export default function GameboxNavbar({ userProfile }) {
+export default function GameboxNavbar() {
     const [games, setGames] = useState(null);
     const [searchButton, setSearchButton] = useState(false);
     const setSearchBtn = () => {
@@ -26,7 +26,6 @@ export default function GameboxNavbar({ userProfile }) {
         setGames(data);
       })
     }, []);
-  const user = currentUser;
   return (
     <>
       <Navbar style={{backgroundColor: "#14181c", variant: "light"}}>
@@ -47,17 +46,17 @@ export default function GameboxNavbar({ userProfile }) {
           <Nav> 
             <img
               alt=""
-              src={userProfile.image}
+              src={currentUser.image}
               width="40"
               height="40"
               style={{borderRadius: '50%'}}
             />
-            <a><Nav.Link href={"/profile/" + user.id} style={{color: '#99aabb', size: '24px', fontWeight: 'bold'}}>{user.name}</Nav.Link></a>
+            <a><Nav.Link href={"/profile/" + currentUser.id} style={{color: '#99aabb', size: '24px', fontWeight: 'bold'}}>{currentUser.name}</Nav.Link></a>
           
             <Link to="/gamespage" className='nav-link' style={{color: '#99aabb'}}> Games </Link>
             <a><Nav.Link href="/listspage" style={{color: '#99aabb'}}> Lists </Nav.Link></a>
+            <Link to="/myreviews" className='nav-link' style={{color: '#99aabb'}}> My reviews </Link>
             <button className="searchbutton" onClick={setSearchBtn}><FaSearch style={{width: 30, color: '#99aabb'}}/></button>
-            <Link> <Button className='nav-btn'> <b>+ LOG</b>  </Button></Link>
             <Link to="/register"> <Button className='nav-btn'> <b>Register</b>  </Button></Link>
             <Link to="/login"> <Button className='nav-btn'> <b>Login</b>  </Button></Link>
           </Nav>

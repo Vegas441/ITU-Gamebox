@@ -1,6 +1,6 @@
 const currentUser = {
     id: 1,
-    name: "User1234",
+    name: "Joee",
     bio: "will add later",
     image: "/profile_pics/person_0.jpg"
 }

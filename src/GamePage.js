@@ -5,6 +5,7 @@ import { useEffect, useState} from 'react';
 import { useParams } from "react-router-dom";
 import './GamePage.css'
 import ReactStars from "react-stars";
+import RateCard from './RateCard';
 
 function GamePage() {
   let { gameID } = useParams();
@@ -31,7 +32,7 @@ function GamePage() {
   return (
     <div className="gamePage">
       <div className="gameName">
-        {game && <h1 >{game.name}</h1>}
+        {game && <h1 >{game.name} <p style={{display: 'inline', fontSize: '20px'}}>({game.releaseDate})</p></h1>}
       </div>
       <div className="container">
         
@@ -39,10 +40,16 @@ function GamePage() {
           {game && <img 
             src={game.image} 
             alt='' 
-            style={{height:"400px", width:"300px"}}/> }
+            style={{height:"400px", width:"300px", borderRadius: '5%'}}/> }
         </div>
         <div className="gameRelease">
-          {game && <p >Release date: {game.releaseDate}</p> }
+          {game && <p style={{maxWidth: '500px'}}>{/*Release date: {game.releaseDate}*/}</p> }
+        </div>
+        <div style={{marginLeft: '80%'}}> 
+          {game && <RateCard game={game}/>}
+        </div>
+        <div className="gameDesc">
+          {game && <p style={{maxWidth: '1500px'}}>Description: {game.desc}</p>}
         </div>
         <div className="revSec">
           <div className="revHeader">
@@ -72,9 +79,7 @@ function GamePage() {
         </div>
       
       </div>
-      <div className="gameDesc">
-          {game && <p >Description: {game.desc}</p>}
-      </div>
+      
 
       
     </div>

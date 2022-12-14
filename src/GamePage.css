@@ -1,0 +1,52 @@
+/* author: Vitezslav Cupl (xcuplv00) */
+
+.gamePage {
+    color: white;
+}
+
+.gameName {
+    margin-top: 40px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gamePage .container {
+    display: grid;
+    grid-template-columns: 300px 100px 1fr;
+    margin-bottom: 40px;
+}
+
+.gamePage .container .gameImg {
+    max-height: 350px;
+    max-width: 220px;
+    border-radius: 5%;
+    padding-left: 0px;
+}
+
+.gameRelease {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.revSec {
+    padding-left: 200px;
+}
+
+.gameDesc {
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.revSec .revItems {
+    margin-top: 20px;
+}
+
+.revItems p {
+    margin-top: 20px;
+}
+
+.rating {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+}

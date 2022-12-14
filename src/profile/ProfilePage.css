@@ -1,0 +1,53 @@
+.profile-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.edit-btn {  
+    margin: 30px;
+    float: right;
+}
+
+.profile-page .list-container {
+    color: white;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-details {
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-details .profile-detail {
+    margin: 5px;
+    width: 100%;
+    display: inline;
+}
+
+.profile-details .profile-name, .profile-bio {
+    color: white;
+    background-color: #212529;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5%;
+}

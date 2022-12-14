@@ -16,8 +16,8 @@ export default function GameCard({ gameId }) {
       }, []);
 
     return (
-        <>
-        {game && <img src={game.image} style={{height: '310px', width: '207px', marginTop: '110px', borderRadius: '5%'}}/>}
-        </>
+      <>
+      {game && <img alt={game.id} src={game.image} style={{height: '310px', width: '207px', marginTop: '110px', borderRadius: '5%'}}/>}
+      </>
     )
 }

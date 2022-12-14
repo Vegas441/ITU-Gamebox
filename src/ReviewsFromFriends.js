@@ -16,7 +16,7 @@ export default function ReviewsFromFriends({ reviews }) {
       {reviews.map(review => {
         if(review.userID !== currentUser.id)
         return (
-          <ReviewCard review={review}/>
+          <ReviewCard key={review.id} review={review}/>
         )
       })}
     </div>

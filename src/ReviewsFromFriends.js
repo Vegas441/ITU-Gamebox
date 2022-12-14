@@ -1,3 +1,6 @@
+/**
+ * @author David Svaty (xsvaty01)
+ */
 import React from 'react'
 import currentUser from './current_user'
 import ReviewCard from './ReviewCard'

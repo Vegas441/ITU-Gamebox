@@ -1,3 +1,6 @@
+/**
+ * @author David Svaty (xsvaty01)
+ */
 import React, { useState, useEffect } from 'react';
 
 export default function GameCard({ gameId }) {

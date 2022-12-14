@@ -1,3 +1,6 @@
+/**
+ * @author Jakub Křivánek (xkriva30)
+ */
 import React, {  useState } from 'react';
 import { Button } from 'react-bootstrap';
 import currentUser from '../current_user';

@@ -1,3 +1,6 @@
+/**
+ * @author Jakub Křivánek (xkriva30)
+ */
 import React, {useState} from "react";
 import "./ListsPage.css"
 import { Button } from "react-bootstrap";

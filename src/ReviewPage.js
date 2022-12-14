@@ -1,3 +1,6 @@
+/**
+ * @author David Svaty (xsvaty01)
+ */
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
 import ReactStars from "react-stars";

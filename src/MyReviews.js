@@ -1,3 +1,6 @@
+/**
+ * @author David Svaty (xsvaty01)
+ */
 import React, { useState, useEffect } from 'react';
 import currentUser from './current_user'
 import GameCard from './GameCard';

@@ -1,3 +1,6 @@
+/**
+ * @author Jakub Křivánek (xkriva30)
+ */
 import React, { useRef, useState, useEffect} from 'react';
 import './RegisterLogin.css';
 import { Button } from 'react-bootstrap';

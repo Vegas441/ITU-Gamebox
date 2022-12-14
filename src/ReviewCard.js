@@ -1,3 +1,6 @@
+/**
+ * @author David Svaty (xsvaty01)
+ */
 import React, { useEffect, useState } from 'react';
 import ReactStars from 'react-stars';
 import Card from 'react-bootstrap/Card';

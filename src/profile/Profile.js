@@ -1,3 +1,6 @@
+/**
+ * @author Jakub Křivánek (xkriva30)
+ */
 import React, {useState, useEffect} from 'react'
 import './ProfilePage.css'
 import currentUser from '../current_user';

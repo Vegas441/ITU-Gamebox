@@ -227,15 +227,6 @@
       "date": "5-11-2022"
     },
     {
-      "id": 5,
-      "name": "review_5",
-      "userID": 1,
-      "gameID": 2,
-      "rating": 5,
-      "content": "Masterpiece !",
-      "date": "12/14/2022"
-    },
-    {
       "id": 6,
       "name": "review_6",
       "userID": 1,
@@ -251,6 +242,15 @@
       "gameID": 8,
       "rating": 3,
       "content": "Its okay i guess",
+      "date": "12/14/2022"
+    },
+    {
+      "id": 8,
+      "name": "review_8",
+      "userID": 1,
+      "gameID": 4,
+      "rating": 4,
+      "content": "great",
       "date": "12/14/2022"
     }
   ],
@@ -285,6 +285,18 @@
       "name": "Favorite games",
       "userID": 1,
       "id": 4
+    },
+    {
+      "name": "New list",
+      "userID": 1,
+      "id": 5,
+      "games": []
+    },
+    {
+      "name": "New list 2",
+      "userID": 1,
+      "id": 6,
+      "games": []
     }
   ]
 }

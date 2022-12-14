@@ -1,3 +1,6 @@
+/**
+ * @author David Svaty (xsvaty01)
+ */
 const currentUser = {
     id: 1,
     name: "Joee",

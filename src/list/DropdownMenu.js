@@ -1,3 +1,6 @@
+/**
+ * @author Jakub Křivánek (xkriva30)
+ */
 import React from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 import './Popup.css';

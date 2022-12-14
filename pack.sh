@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
 #Packing script
-rm add-name-later.zip
-zip -r add-name-later.zip *
+rm xsvaty01_src.zip
+zip -r xsvaty01_src.zip *
